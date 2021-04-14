@@ -2,9 +2,12 @@ package market.services;
 
 import Dto.CreateSuperFoodMarketDto;
 import domain.SuperFoodMarket;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
+
 @Service
+@NoArgsConstructor
 public class MarketCreationService {
 
     public SuperFoodMarket createSuperFoodMarket(CreateSuperFoodMarketDto createSuperFoodMarketDto){
