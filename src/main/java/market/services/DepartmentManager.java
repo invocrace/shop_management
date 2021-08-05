@@ -11,7 +11,7 @@ public class DepartmentManager {
 
       return  Department.builder()
                 .name(name)
-                .typesOfProduct(products)
+                .products(products)
                 .build();
     }
 }
