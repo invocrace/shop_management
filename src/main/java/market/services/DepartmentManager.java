@@ -1,17 +1,17 @@
 package market.services;
 
 import domain.Department;
-import domain.TypeOfProduct;
+import domain.Product;
 
 import java.util.List;
 
 public class DepartmentManager {
 
-    public Department createDepartment(String name, List<TypeOfProduct> typesOfProduct){
+    public Department createDepartment(String name, List<Product> products){
 
       return  Department.builder()
                 .name(name)
-                .typesOfProduct(typesOfProduct)
+                .typesOfProduct(products)
                 .build();
     }
 }

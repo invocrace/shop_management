@@ -10,5 +10,5 @@ import java.util.List;
 @Builder
 public class Department {
     String name;
-    List<TypeOfProduct> typesOfProduct;
+    List<Product> typesOfProduct;
 }

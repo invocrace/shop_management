@@ -7,7 +7,7 @@ import lombok.ToString;
 @ToString
 @Getter
 @Builder
-public abstract class Product {
+public class Product {
     protected String id;
     protected String name;
     protected String creationDate;
