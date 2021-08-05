@@ -1,13 +1,17 @@
 package domain;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.ToString;
 
 @ToString
 @Getter
+@Builder
 public abstract class Product {
-    protected int id;
+    protected String id;
     protected String name;
     protected String creationDate;
-    protected Double price;
+    protected double price;
+    protected TypeOfProduct type;
+
 }
