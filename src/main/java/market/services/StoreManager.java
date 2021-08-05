@@ -2,13 +2,12 @@ package market.services;
 
 import domain.Department;
 import domain.Store;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
 
-@Service
-public class StoreManagement {
+
+public class StoreManager {
 
     private final String UNDERSCORE = "_";
 

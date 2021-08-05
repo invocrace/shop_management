@@ -1,6 +1,6 @@
 import domain.Department;
 import domain.Store;
-import market.services.StoreManagement;
+import market.services.StoreManager;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -12,19 +12,22 @@ public class ProductStoreTest {
     @Test
     public void createStoreTest() {
 
-        StoreManagement storeManagement = new StoreManagement();
+        StoreManager storeManager = new StoreManager();
 
-        List<Department> departments = new ArrayList<>();
+
         Department department = Department.builder()
                 .name("fresh section")
                 .build();
+
+        List<Department> departments = new ArrayList<>();
+        departments.add(department);
 
         String name = "CARROUF";
 
         String id = UUID.randomUUID().toString();
 
         Store expectedStore = getExpectedStore(departments, name, id);
-        Store actualStore = storeManagement.createStore(name, departments);
+        Store actualStore = storeManager.createStore(name, departments);
         actualStore.setId(id);
 
         assert actualStore.getDepartments().equals(expectedStore.getDepartments());

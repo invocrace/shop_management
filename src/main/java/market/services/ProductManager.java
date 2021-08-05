@@ -2,13 +2,12 @@ package market.services;
 
 import domain.Product;
 import domain.TypeOfProduct;
-import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
-@Service
+
 public class ProductManager {
 
     private final String UNDERSCORE = "_";
